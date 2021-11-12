@@ -1,8 +1,8 @@
-import { createApp } from 'vue'
-import VueRouter from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
-const app = createApp({})
 
-app.use(VueRouter)
+const router = createRouter({
+  history: createWebHashHistory()
+})
 
-export default VueRouter
+export default router
